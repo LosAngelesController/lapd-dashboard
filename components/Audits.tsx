@@ -4,6 +4,7 @@ import LineItem from "./LineItem";
 import { audits } from "@/audits.json";
 
 export default function Audits() {
+
   return (
     <>
       <div className="md:hidden">
