@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import mapboxgl from "mapbox-gl";
 
 mapboxgl.accessToken =
@@ -27,38 +26,45 @@ function ArrestMap() {
 
     const map = new mapboxgl.Map(mapparams);
 
-//     map.addControl(new mapboxgl.AttributionControl(), "bottom-right");
+    //     map.addControl(new mapboxgl.AttributionControl(), "bottom-right");
   }, []);
   //   mapref.current = map;
 
   useEffect(() => {
     if (mapContainerRef.current) {
-    // Get the map container element
-    const mapContainer = mapContainerRef.current;
+      // Get the map container element
+      const mapContainer = mapContainerRef.current;
 
-    // Get the mapbox copyright element
-    const mapboxAttribution = mapContainer.querySelector<HTMLElement>(
-      ".mapboxgl-ctrl-attrib-inner"
-    );
+      // Get the mapbox copyright element
+      const mapboxAttribution = mapContainer.querySelector<HTMLElement>(
+        ".mapboxgl-ctrl-attrib-inner"
+      );
 
-    // Get the mapbox links elements
-    const mapboxLinks = mapContainer.querySelectorAll<HTMLElement>(".mapbox-improve-map");
+      // Get the mapbox links elements
+      const mapboxLinks = mapContainer.querySelectorAll<HTMLElement>(
+        ".mapbox-improve-map"
+      );
 
-    // Set the font size for the copyright and links
-    mapboxAttribution.style.fontSize = "10px";
-    mapboxLinks.forEach((link) => {
-      link.style.fontSize = "10px";
-    });
-}
+      // Set the font size for the copyright and links
+      if (mapboxAttribution) {
+        mapboxAttribution.style.fontSize = "10px";
+      }
+      mapboxLinks.forEach((link) => {
+        link.style.fontSize = "10px";
+      });
+    }
   }, []);
 
-
   const onMapClick = () => {
-    window.open('https://2022arrests.lacontroller.io/');
-  }
+    window.open("https://2022arrests.lacontroller.io/");
+  };
 
   return (
-    <div ref={mapContainerRef} style={{ width: "100%", height: "400px" }} onClick={onMapClick}/>
+    <div
+      ref={mapContainerRef}
+      style={{ width: "100%", height: "400px" }}
+      onClick={onMapClick}
+    />
   );
 }
 
