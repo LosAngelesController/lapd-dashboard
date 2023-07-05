@@ -3,7 +3,7 @@ import LineItem from "./LineItem";
 
 import { audits } from "@/audits.json";
 
-export default function Audits() {
+export default function Audits(props: any) {
   return (
     <>
       <div className="md:hidden">
@@ -20,7 +20,7 @@ export default function Audits() {
 
       <div className="hidden md:block">
         <div className="flex flex-row gap-x-3 justify-around">
-          {audits.map((eachaudit: any, eachauditnum: number) => (
+          {props.audits.map((eachaudit: any, eachauditnum: number) => (
             <>
               <div
                 key={eachauditnum}
@@ -49,3 +49,12 @@ export default function Audits() {
     </>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {
+      audits,
+    },
+  };
+}
+
