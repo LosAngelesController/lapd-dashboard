@@ -8,6 +8,11 @@ import PieChart from "@/components/PieChart";
 import LapdBudget from "@/components/LapdBudget";
 import CityBudget from "@/components/CityBudget";
 import ArrestMap from "@/components/ArrestMap";
+import Audits from "@/components/Audits";
+import Staffing from "@/components/Staffing";
+import Division from "@/components/Division";
+import { MantineProvider } from "@mantine/core";
+import { Payroll } from "@/components/Payroll";
 
 export default function Home() {
   const [arrestData, setArrestData] = useState([]);
@@ -23,14 +28,14 @@ export default function Home() {
       })
       .then((response) => {
         const data = response.data;
-        alert("Retrieved " + data.length + " records from the dataset!");
+        // alert("Retrieved " + data.length + " records from the dataset!");
         setArrestData(data);
       })
       .catch((error) => {
         console.error("Error:", error);
       });
 
-      axios
+    axios
       .get(
         "https://api.sheety.co/aacf3e0f7311db48c4e758ecf773731f/cityOfLaBudgetTabularForTransparencyCharts/sheet1",
         {
@@ -44,10 +49,12 @@ export default function Home() {
         const data = response.data.sheet1;
         console.log("data", data);
         setCityBudget(
-          data.filter((x: any) => x.fiscalYear === 2023).map((x: any) => ({
-            department: x.department,
-            totalBudget: x.totalBudget,
-          }))
+          data
+            .filter((x: any) => x.fiscalYear === 2023)
+            .map((x: any) => ({
+              department: x.department,
+              totalBudget: x.totalBudget,
+            }))
         );
       })
       .catch((error) => {
@@ -60,22 +67,37 @@ export default function Home() {
 
   return (
     <section className="container max-w-5xl mx-auto flex min-h-screen flex-col p-10">
-      <Nav />
-      <h1 className="mt-5 font-bold text-2xl">LAPD Dashboard</h1>
-      <h2 className="mt-7 font-bold text-xl" style={{color: '#41ffca'}}>LAPD Budget</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
-        <CityBudget cityBudget={cityBudget}/>
-        <LapdBudget />
-      </div>
-      <h2 className="mt-7 font-bold text-xl" style={{color: '#41ffca'}}>LAPD Arrests</h2>
-      <div className="mt-2">
-        <ArrestMap />
-      </div>
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-6">
-        <BarChart />
-        <DoughnutChart />
-        <PieChart />
-      </div>
+        <Nav />
+        <h1 className="mt-5 font-bold text-2xl">LAPD Dashboard</h1>
+        <h2 className="mt-7 font-bold text-xl">
+          LAPD FY2022-2023 Budget:{" "}
+          <span className="bg-zinc-800 rounded-lg px-2 py-1" style={{ color: "#41ffca" }}>$3.15 BILLION</span>
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+          <CityBudget cityBudget={cityBudget} />
+          <LapdBudget />
+        </div>
+        <h2 className="mt-7 font-bold text-xl">LAPD Staffing</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+          <Staffing />
+          <Payroll />
+        </div>
+        <h2 className="mt-7 font-bold text-xl">LAPD Arrests</h2>
+        <div className="mt-2">
+          <ArrestMap />
+        </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-6">
+          <BarChart />
+          <DoughnutChart />
+          <Division />
+          <PieChart />
+        </div>
+        <h2 className="mt-7 font-bold text-xl">Completed Audits</h2>
+        <div className="mt-4">
+          <Audits />
+        </div>
+        <h2 className="mt-7 font-bold text-xl">Ongoing Audits</h2>
+        <h2 className="mt-7 font-bold text-xl">Transparency Facts</h2>
     </section>
   );
 }

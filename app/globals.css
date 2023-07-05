@@ -4,14 +4,14 @@
 
 /* Light theme */
 :root[data-theme='light'] {
-  --primary-color: #007bff;
+  --primary-color: #41ffca;
   --background-color: #ffffff;
   --text-color: #000000;
 }
 
 /* Dark theme */
 :root[data-theme='dark'] {
-  --primary-color: #17a2b8;
+  --primary-color: #41ffca;
   --background-color: #222222;
   --text-color: #ffffff;
 }

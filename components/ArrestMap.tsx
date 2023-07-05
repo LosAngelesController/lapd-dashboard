@@ -52,8 +52,13 @@ function ArrestMap() {
 }
   }, []);
 
+
+  const onMapClick = () => {
+    window.open('https://2022arrests.lacontroller.io/');
+  }
+
   return (
-    <div ref={mapContainerRef} style={{ width: "100%", height: "400px" }} />
+    <div ref={mapContainerRef} style={{ width: "100%", height: "400px" }} onClick={onMapClick}/>
   );
 }
 
