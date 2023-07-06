@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 
-import ThemeManager from "@/components/ThemeManager";
+// import ThemeManager from "@/components/ThemeManager";
 
 function getWindowDimensions() {
   if (typeof window != "undefined") {
@@ -67,7 +67,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex">
-      <ThemeManager theme={theme} setTheme={setTheme} toggleTheme={toggleTheme}/>
+      {/* <ThemeManager theme={theme} setTheme={setTheme} toggleTheme={toggleTheme}/> */}
           <div className="flex">
               <Image
                 className='block h-16 w-auto mr-2'
