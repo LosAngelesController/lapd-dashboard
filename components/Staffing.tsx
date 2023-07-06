@@ -77,8 +77,8 @@ function Staffing() {
   var options = {
     plugins: {
       legend: {
-        color: "rgba(0, 0, 0, 1)",
         labels: {
+          color: "rgb(255, 255, 255)",
           font: {
             weight: "bold",
             size: 12
@@ -91,12 +91,18 @@ function Staffing() {
         grid: {
           display: true,
           color: "rgba(198, 198, 198, .5)",
+        },
+        ticks: {
+          color: "rgb(255, 255, 255)"
         }
       },
       x: {
         grid: {
           display: true,
           color: "rgba(198, 198, 198, .5)",
+        },
+        ticks: {
+          color: "rgb(255, 255, 255)"
         }
       }
     }

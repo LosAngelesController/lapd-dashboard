@@ -100,12 +100,8 @@ function Division() {
       {
         label: "2022 Arrests by Division",
         data: divisions.map((x: any) => x.cases),
-        backgroundColor: [
-          "#41ffca",
-        ],
-        borderColor: [
-          "#41ffca",
-        ],
+        backgroundColor: ["#41ffca"],
+        borderColor: ["#41ffca"],
         borderWidth: 1,
       },
     ],
@@ -114,8 +110,8 @@ function Division() {
   var options = {
     plugins: {
       legend: {
-        color: "rgba(0, 0, 0, 1)",
         labels: {
+          color: "rgb(255, 255, 255)",
           font: {
             weight: "bold",
             size: 12,
@@ -129,11 +125,17 @@ function Division() {
           display: true,
           color: "rgba(198, 198, 198, .5)",
         },
+        ticks: {
+          color: "rgb(255, 255, 255)",
+        },
       },
       x: {
         grid: {
           display: true,
           color: "rgba(198, 198, 198, .5)",
+        },
+        ticks: {
+          color: "rgb(255, 255, 255)",
         },
       },
     },

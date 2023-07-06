@@ -75,8 +75,8 @@ function PieChart() {
   var options = {
     plugins: {
       legend: {
-        color: "rgba(0, 0, 0, 1)",
         labels: {
+          color: "rgb(255, 255, 255)",
           font: {
             weight: "bold",
             size: 12

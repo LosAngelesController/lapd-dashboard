@@ -73,8 +73,8 @@ export default function Home() {
         withNormalizeCSS
       >
         <Nav />
-        <h1 className="mt-5 font-bold text-2xl">LAPD Dashboard</h1>
-        <h2 className="mt-7 font-bold text-xl">
+        <h1 className="mt-5 font-bold text-2xl text-white">LAPD Dashboard</h1>
+        <h2 className="mt-7 font-bold text-xl text-white">
           LAPD FY2022-2023 Budget:{" "}
           <span
             className="bg-zinc-800 rounded-lg px-2 py-1"
@@ -87,12 +87,12 @@ export default function Home() {
           <CityBudget cityBudget={cityBudget} />
           <LapdBudget />
         </div>
-        <h2 className="mt-7 font-bold text-xl">LAPD Staffing</h2>
+        <h2 className="mt-7 font-bold text-xl text-white">LAPD Staffing</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
           <Staffing />
           <Payroll />
         </div>
-        <h2 className="mt-7 font-bold text-xl">LAPD Arrests</h2>
+        <h2 className="mt-7 font-bold text-xl text-white">LAPD Arrests</h2>
         <div className="mt-2">
           <ArrestMap />
         </div>
@@ -102,12 +102,12 @@ export default function Home() {
           <Division />
           <PieChart />
         </div>
-        <h2 className="mt-7 font-bold text-xl">Completed Audits</h2>
+        <h2 className="mt-7 font-bold text-xl text-white">Completed Audits</h2>
         <div className="mt-4">
           <Audits />
         </div>
-        <h2 className="mt-7 font-bold text-xl">Ongoing Audits</h2>
-        <h2 className="mt-7 font-bold text-xl">Transparency Facts</h2>
+        <h2 className="mt-7 font-bold text-xl text-white">Ongoing Audits</h2>
+        <h2 className="mt-7 font-bold text-xl text-white">Transparency Facts</h2>
       </MantineProvider>
     </section>
   );

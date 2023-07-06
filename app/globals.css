@@ -5,8 +5,10 @@
 /* Light theme */
 :root[data-theme='light'] {
   --primary-color: #41ffca;
-  --background-color: #ffffff;
-  --text-color: #000000;
+  /* --background-color: #ffffff; */
+  /* --text-color: #000000; */
+  --background-color: #222222;
+  --text-color: #ffffff;
 }
 
 /* Dark theme */
