@@ -80,9 +80,8 @@ export default function Navbar() {
               />
             <Link href="/">
               <Image
-                // className={`block h-8 w-auto ${theme === 'light' ? 'block' : 'hidden'}`}
                 className='block h-16 w-auto'
-                src={`${theme === 'light' ? '/logo-elect.png' : '/KennethMejia-logo-white-elect.png'}`}
+                src={`${theme === 'light' ? '/KennethMejia-logo-white-elect.png' : '/KennethMejia-logo-white-elect.png'}`}
                 alt="Kenneth Mejia LA City Controller"
                 height={32}
                 width={72}
