@@ -50,12 +50,3 @@ export default function Audits() {
     </>
   );
 }
-
-// export async function getStaticProps() {
-//   return {
-//     props: {
-//       audits,
-//     },
-//   };
-// }
-
