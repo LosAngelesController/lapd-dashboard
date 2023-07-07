@@ -88,7 +88,7 @@ function PieChart() {
 
   return (
     <div className="mt-6">
-      <h3 className="mb-2">Arrests by Race</h3>
+      <h3 className="mb-2">2022 Arrests by Race</h3>
       <Pie data={data} height={400} options={options} />
     </div>
   );

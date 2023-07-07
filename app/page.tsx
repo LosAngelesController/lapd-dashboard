@@ -92,7 +92,7 @@ export default function Home() {
           <Staffing />
           <Payroll />
         </div>
-        <h2 className="mt-7 font-bold text-xl text-white">LAPD Arrests</h2>
+        <h2 className="mt-7 font-bold text-xl text-white">2022 LAPD Arrests</h2>
         <div className="mt-2">
           <ArrestMap />
         </div>

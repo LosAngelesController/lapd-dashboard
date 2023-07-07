@@ -133,7 +133,7 @@ function BarChart() {
 
   return (
     <div className="mt-4">
-      <h5 className="mb-2">Arrests by Council District</h5>
+      <h5 className="mb-2">2022 Arrests by Council District</h5>
       <Bar data={data} height={325} options={options} />
     </div>
   );
