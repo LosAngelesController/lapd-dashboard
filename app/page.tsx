@@ -14,9 +14,24 @@ import Division from "@/components/Division";
 import { Payroll } from "@/components/Payroll";
 import { MantineProvider } from "@mantine/core";
 
+interface PayrollItem {
+  index?: number;
+  record?: string;
+  fName?: string;
+  lName?: string;
+  jobTitle?: string;
+  department?: string;
+  basePay?: string;
+  overtimePay?: string;
+  otherPay?: string;
+  personalBenefits?: string;
+  totalPay?: string;
+}
+
 export default function Home() {
   const [arrestData, setArrestData] = useState([]);
   const [cityBudget, setCityBudget] = useState([]);
+  const [payroll, setPayroll] = useState<PayrollItem[]>([]);
 
   useEffect(() => {
     axios
@@ -28,7 +43,6 @@ export default function Home() {
       })
       .then((response) => {
         const data = response.data;
-        // alert("Retrieved " + data.length + " records from the dataset!");
         setArrestData(data);
       })
       .catch((error) => {
@@ -47,7 +61,6 @@ export default function Home() {
       .then((response) => {
         console.log(response);
         const data = response.data.sheet1;
-        console.log("data", data);
         setCityBudget(
           data
             .filter((x: any) => x.fiscalYear === 2023)
@@ -62,8 +75,41 @@ export default function Home() {
       });
   }, []);
 
-  console.log("arrestData", arrestData);
-  console.log("cityBudget", cityBudget);
+  useEffect(() => {
+    axios
+      .get("https://controllerdata.lacity.org/resource/7vb2-ehnk.json", {
+        params: {
+          $limit: 110000,
+          $$app_token: "vIy4NMT2G767TRRR99rOqHoKY",
+        },
+      })
+      .then((response) => {
+        const data = response.data;
+        console.log(data);
+        const payrollData = data
+        .filter((x: any) => x.pay_year === '2023')
+        .map((x: any, index: number) => ({
+          index: index + 1,
+          record: x.record_nbr,
+          fName: x.first_name,
+          lName: x.last_name,
+          jobTitle: x.job_title,
+          department: x.department_title,
+          basePay: x.regular_pay,
+          overtimePay: x.overtime_pay,
+          otherPay: x.all_other_pay,
+          personalBenefits: x.benefit_pay,
+          totalPay: x.total_pay,
+        }));
+
+      setPayroll([{ index: 0, fName: "Select By Name" }, ...payrollData]);
+    })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
+
+  console.log("payroll", payroll);
 
   return (
     <section className="container max-w-5xl mx-auto flex min-h-screen flex-col p-10">
@@ -90,7 +136,7 @@ export default function Home() {
         <h2 className="mt-7 font-bold text-xl text-white">LAPD Staffing</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
           <Staffing />
-          <Payroll />
+          <Payroll payroll={payroll}/>
         </div>
         <h2 className="mt-7 font-bold text-xl text-white">LAPD Arrests</h2>
         <div className="mt-2">

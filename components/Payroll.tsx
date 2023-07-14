@@ -1,14 +1,57 @@
-import * as React from "react";
+"use-client";
+import React, { useState } from "react";
+import { PayrollModal } from "./PayrollModal";
+import styles from "../styles/payroll.module.css";
 
-export function Payroll() {
+interface PayrollProps {
+  payroll: any[];
+}
+
+export function Payroll(props: PayrollProps) {
+  const [value, setValue] = useState("Last, First");
+  const payrollInfo = props.payroll;
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleChange = (e: any) => {
+    console.log("handleChange", e.target.value);
+    setValue(e.target.value);
+    console.log("value", value);
+    setShowModal(value !== "" && value !== "Select By Name");
+  };
+
   const onPayrollClick = () => {
     window.open(
       "https://lacity-2.payroll.socrata.com/#!/year/2023/full_time_employees,others/pay1,pay2,pay3,pay4/explore/0-0-1-0-0/fms_department_title/POLICE/1-1-0/mou_title"
     );
   };
+
+  const uniqueNames = Array.from(
+    new Set(payrollInfo.map((x: any) => `${x.lName}, ${x.fName}`))
+  ).sort();
+  console.log("unique names", uniqueNames);
+
   return (
     <div className="mt-6 grid justify-items-center">
+      <div>
+        <PayrollModal
+          payrollInfo={payrollInfo}
+          showModal={showModal}
+          setShowModal={setShowModal}
+          value={value}
+        />
+      </div>
       <h5 className="mb-2 grid content-end">PAYROLL LOOKUP</h5>
+      <div className={styles.dropdown}>
+        <select value={value} onChange={handleChange}>
+          <option value="">Select By Name</option>
+          {uniqueNames.map((name: string, index: number) => (
+            <option key={index} value={name}>
+              {name}
+            </option>
+          ))}
+        </select>
+      </div>
       <div className="flex-cols">
         <div className="flex justify-center mt-4">
           <button
@@ -18,7 +61,12 @@ export function Payroll() {
             See Payroll
           </button>
         </div>
-        <p className="mt-2 text-sm bg-zinc-800 px-2 py-2 rounded" style={{color: "#41ffca"}}>Click button to browse Open Payroll System</p>
+        <p
+          className="mt-2 text-sm bg-zinc-800 px-2 py-2 rounded"
+          style={{ color: "#41ffca" }}
+        >
+          Click button to browse Open Payroll System
+        </p>
       </div>
     </div>
   );
