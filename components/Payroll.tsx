@@ -41,16 +41,18 @@ export function Payroll(props: PayrollProps) {
           value={value}
         />
       </div>
-      <h5 className="mb-2 grid content-end">PAYROLL LOOKUP</h5>
-      <div className={styles.dropdown}>
-        <select value={value} onChange={handleChange}>
-          <option value="">Select By Name</option>
-          {uniqueNames.map((name: string, index: number) => (
-            <option key={index} value={name}>
-              {name}
-            </option>
-          ))}
-        </select>
+      <div className="grid content-start">
+        <h5 className="mb-2 justify-self-center">PAYROLL LOOKUP</h5>
+        <div className={styles.dropdown}>
+          <select value={value} onChange={handleChange}>
+            <option value="">Select By Name</option>
+            {uniqueNames.map((name: string, index: number) => (
+              <option key={index} value={name}>
+                {name}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
       <div className="flex-cols">
         <div className="flex justify-center mt-4">
