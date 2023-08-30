@@ -1,6 +1,6 @@
 "use-client";
 import React, { useState } from "react";
-import { Formik, Form, Field } from "formik";
+// import { Formik, Form, Field } from "formik";
 import { PayrollModal } from "./PayrollModal";
 import styles from "../styles/payroll.module.css";
 
@@ -32,77 +32,44 @@ export function Payroll(props: PayrollProps) {
   ).sort();
   console.log("unique names", uniqueNames);
 
-  const filteredNames =
-    value !== ""
-      ? uniqueNames.filter((name: string) =>
-          name.toLowerCase().includes(value.toLowerCase())
-        )
-      : uniqueNames;
-
   return (
-    <Formik
-      initialValues={{ searchQuery: "" }} // Initial form values
-      onSubmit={() => {}} // Empty submit function for now
-    >
-      {({ values }) => (
-        <div className="mt-6 grid justify-items-center">
-          <div>
-            <PayrollModal
-              payrollInfo={payrollInfo}
-              showModal={showModal}
-              setShowModal={setShowModal}
-              value={value}
-            />
-          </div>
-          <div className="grid content-start">
-            <h5 className="mb-2 justify-self-center">2023 PAYROLL LOOKUP</h5>
-            <div className={styles.dropdown}>
-              <Form>
-                {" "}
-                {/* Wrap the select element with Formik's Form */}
-                <Field
-                  as="select"
-                  name="searchQuery"
-                  value={values.searchQuery}
-                  onChange={handleChange}
-                >
-                  {/* <option value="">Search by name...</option> */}
-                  {uniqueNames.map((name: string, index: number) => (
-                    <option key={index} value={name}>
-                      {name}
-                    </option>
-                  ))}
-                </Field>
-                {values.searchQuery === "" && (
-                  <Field
-                    as="input"
-                    type="text"
-                    name="searchQuery"
-                    placeholder="Search..."
-                    className={styles.searchBar}
-                  />
-                )}
-              </Form>
-            </div>
-          </div>
-          <div className="flex-cols">
-            <div className="flex justify-center mt-4">
-              <button
-                className="bg-gray-800 rounded-lg px-4 py-2 border border-gray-400 text-slate-50 text-sm md:text-base"
-                onClick={onPayrollClick}
-              >
-                See Full Payroll Site
-              </button>
-            </div>
-            <p
-              className="mt-2 text-sm bg-zinc-800 px-2 py-2 rounded"
-              style={{ color: "#41ffca" }}
-            >
-              Click button to browse Open Payroll System
-            </p>
-          </div>
+    <div className="mt-6 grid justify-items-center">
+      <div>
+        <PayrollModal
+          payrollInfo={payrollInfo}
+          showModal={showModal}
+          setShowModal={setShowModal}
+          value={value}
+        />
+      </div>
+      <div className="grid content-start">
+        <h5 className="mb-2 justify-self-center">2023 PAYROLL LOOKUP</h5>
+        <div className={styles.dropdown}>
+          <select value={value} onChange={handleChange}>
+            {uniqueNames.map((name: string, index: number) => (
+              <option key={index} value={name}>
+                {name}
+              </option>
+            ))}
+          </select>
         </div>
-      )}
-    </Formik>
+      </div>
+      <div className="flex-cols">
+        <div className="flex justify-center mt-4">
+          <button
+            className="bg-gray-800 rounded-lg px-4 py-2 border border-gray-400 text-slate-50 text-sm md:text-base"
+            onClick={onPayrollClick}
+          >
+            See Full Payroll Site
+          </button>
+        </div>
+        <p
+          className="mt-2 text-sm bg-zinc-800 px-2 py-2 rounded"
+          style={{ color: "#41ffca" }}
+        >
+          Click button to browse Open Payroll System
+        </p>
+      </div>
+    </div>
   );
 }
