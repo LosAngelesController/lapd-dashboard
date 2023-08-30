@@ -56,7 +56,7 @@ function ArrestMap() {
   }, []);
 
   const onMapClick = () => {
-    window.open("https://2022arrests.lacontroller.io/");
+    window.open("https://arrests.lacontroller.io/");
   };
 
   return (
