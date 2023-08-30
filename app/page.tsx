@@ -77,32 +77,31 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("https://controllerdata.lacity.org/resource/7vb2-ehnk.json", {
+      .get("https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/cityEmployeePayroll2017June2023/cityEmployeePayroll2017June2023Csv", {
         params: {
           $limit: 110000,
-          $$app_token: "vIy4NMT2G767TRRR99rOqHoKY",
         },
       })
       .then((response) => {
-        const data = response.data;
-        console.log(data);
+        const data = response.data.cityEmployeePayroll2017June2023Csv;        ;
+        console.log("payroll", data);
         const payrollData = data
-        .filter((x: any) => x.pay_year === '2023')
-        .map((x: any, index: number) => ({
-          index: index + 1,
-          record: x.record_nbr,
-          fName: x.first_name,
-          lName: x.last_name,
-          jobTitle: x.job_title,
-          department: x.department_title,
-          basePay: x.regular_pay,
-          overtimePay: x.overtime_pay,
-          otherPay: x.all_other_pay,
-          personalBenefits: x.benefit_pay,
-          totalPay: x.total_pay,
+        .filter((x: any) => x.payYear === 2023)
+        .map((x: any) => ({
+          id: x.id,
+          record: x.recordNbr,
+          fName: x.firstName,
+          lName: x.lastName,
+          jobTitle: x.jobTitle,
+          department: x.departmentTitle,
+          basePay: x.regularPay.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ','),
+          overtimePay: x.overtimePay.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ','),
+          otherPay: x.allOtherPay.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ','),
+          personalBenefits: x.benefitPay.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ','),
+          totalPay: x.totalPay.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ','),
         }));
 
-      setPayroll([{ index: 0, fName: "Select By Name" }, ...payrollData]);
+      setPayroll(payrollData);
     })
       .catch((error) => {
         console.error("Error:", error);
