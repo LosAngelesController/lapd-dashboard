@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import Head from "next/head";
 import Nav from "@/components/Nav";
 import axios from "axios";
 import BarChart from "@/components/BarChart";
@@ -131,66 +130,6 @@ export default function Home() {
         withGlobalStyles
         withNormalizeCSS
       >
-        <Head>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-          />
-          <title>LAPD Dashboard</title>
-          <meta property="og:type" content="website" />
-          <meta name="twitter:site" content="LAPD Dashboard" />
-          <meta name="twitter:creator" content="@lacontroller" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta
-            name="twitter:title"
-            key="twittertitle"
-            content="LAPD Dashboard"
-          ></meta>
-          <meta
-            name="twitter:description"
-            key="twitterdesc"
-            content="LAPD Dashboard"
-          ></meta>
-          <meta
-            name="twitter:image"
-            key="twitterimg"
-            content="https://lapd-dashboard.vercel.app/dashboard.png"
-          ></meta>
-          <meta name="description" content="LAPD Dashboard" />
-
-          <meta
-            property="og:url"
-            content="https://lapd-dashboard.vercel.app/"
-          />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="LAPD Dashboard" />
-          <meta property="og:description" content="LAPD Dashboard" />
-          <meta
-            property="og:image"
-            content="https://lapd-dashboard.vercel.app/dashboard.png"
-          />
-
-          <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon/cropped-favicon-1-32x32.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="180x180"
-            href="/favicon/cropped-favicon-1-180x180.png"
-          />
-          <meta name="msapplication-TileColor" content="#ffffff" />
-          <meta
-            name="msapplication-config"
-            content="/favicon/browserconfig.xml"
-          />
-          <meta name="theme-color" content="#ffffff" />
-        </Head>
         <Nav />
         <h1 className="mt-5 font-bold text-2xl text-white">LAPD Dashboard</h1>
         <h2 className="mt-7 font-bold text-xl text-white">
