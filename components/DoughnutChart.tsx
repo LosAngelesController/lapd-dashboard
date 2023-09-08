@@ -9,23 +9,23 @@ Chart.register(...registerables);
 function DoughnutChart() {
   const arrestType = [
     {
-      arrest: "Felony",
+      arrest: "Felony 49%",
       cases: 30378,
     },
     {
-      arrest: "Misdemeanor",
+      arrest: "Misdemeanor 42.4%",
       cases: 26245,
     },
     {
-      arrest: "Infraction",
+      arrest: "Infraction 6.8%",
       cases: 4186,
     },
     {
-      arrest: "Dependent",
+      arrest: "Dependent 0.9%",
       cases: 545,
     },
     {
-      arrest: "Other",
+      arrest: "Other 0.8%",
       cases: 520,
     },
   ];

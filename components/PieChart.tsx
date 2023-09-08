@@ -8,35 +8,35 @@ Chart.register(...registerables);
 function PieChart() {
   const races = [
     {
-      race: "Hispanic/Latino",
+      race: "Hispanic/Latino 52.71%",
       cases: 32614,
     },
     {
-      race: "Black",
+      race: "Black 26.17%",
       cases: 16192,
     },
     {
-      race: "White",
+      race: "White 14.93%",
       cases: 9240,
     },
     {
-      race: "Other",
+      race: "Other 5.64%",
       cases: 3489,
     },
     {
-      race: "Asian",
+      race: "Asian 0.49%",
       cases: 304,
     },
     {
-      race: "Pacific Islander",
+      race: "Pacific Islander 0.03%",
       cases: 20,
     },
     {
-      race: "Unknown",
+      race: "Unknown 0.02%",
       cases: 10,
     },
     {
-      race: "Native American",
+      race: "Native American 0.01%",
       cases: 5,
     },
   ];
