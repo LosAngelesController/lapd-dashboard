@@ -25,7 +25,7 @@ export const metadata = {
     title: "LAPD Dashboard",
     description: "Access Point for LAPD Data",
     creator: "@lacontroller",
-    images: ["https://lapd-dashboard.vercel.app/dashboard.png"],
+    image: "https://lapd-dashboard.vercel.app/dashboard.png",
   },
   icons: {
     icon: "/favicon/cropped-favicon-1-32x32.png",
