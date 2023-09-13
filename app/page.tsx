@@ -78,15 +78,16 @@ export default function Home() {
   useEffect(() => {
     axios
       .get(
-        "https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/cityEmployeePayroll2017June2023/cityEmployeePayroll2017June2023Csv",
+        "https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/checkbookData20230908/checkbookData20230908Csv",
         {
           params: {
-            $limit: 110000,
+            $limit: 14000,
           },
         }
       )
       .then((response) => {
-        const data = response.data.cityEmployeePayroll2017June2023Csv;
+        console.log(response.data);
+        const data = response.data.checkbookData20230908Csv;
         console.log("payroll", data);
         const payrollData = data
           .filter((x: any) => x.payYear === 2023)
