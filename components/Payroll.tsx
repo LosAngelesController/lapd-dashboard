@@ -1,6 +1,5 @@
 "use-client";
 import React, { useState } from "react";
-// import { Formik, Form, Field } from "formik";
 import { PayrollModal } from "./PayrollModal";
 import styles from "../styles/payroll.module.css";
 
@@ -15,9 +14,9 @@ export function Payroll(props: PayrollProps) {
   const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e: any) => {
-    console.log("handleChange", e.target.value);
+    // console.log("handleChange", e.target.value);
     setValue(e.target.value);
-    console.log("value", value);
+    // console.log("value", value);
     setShowModal(value !== "");
   };
 
@@ -30,7 +29,7 @@ export function Payroll(props: PayrollProps) {
   const uniqueNames = Array.from(
     new Set(payrollInfo.map((x: any) => `${x.lName}, ${x.fName}`))
   ).sort();
-  console.log("unique names", uniqueNames);
+  // console.log("unique names", uniqueNames);
 
   return (
     <div className="mt-6 grid justify-items-center">

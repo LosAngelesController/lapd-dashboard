@@ -40,7 +40,7 @@ function Staffing() {
     },
     {
       year: 2023,
-      officers: 9201,
+      officers: 9378,
       civilianEmployees: 3018
     },
   ];

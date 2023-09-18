@@ -10,6 +10,7 @@ import CityBudget from "@/components/CityBudget";
 import ArrestMap from "@/components/ArrestMap";
 import Audits from "@/components/Audits";
 import Staffing from "@/components/Staffing";
+import CounterCard from "@/components/CounterCard";
 import Division from "@/components/Division";
 import { Payroll } from "@/components/Payroll";
 import { MantineProvider } from "@mantine/core";
@@ -59,7 +60,7 @@ export default function Home() {
         }
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         const data = response.data.sheet1;
         setCityBudget(
           data
@@ -86,9 +87,9 @@ export default function Home() {
         }
       )
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         const data = response.data.checkbookData20230908Csv;
-        console.log("payroll", data);
+        // console.log("payroll", data);
         const payrollData = data
           .filter((x: any) => x.payYear === 2023)
           .map((x: any) => ({
@@ -122,7 +123,7 @@ export default function Home() {
       });
   }, []);
 
-  console.log("payroll", payroll);
+  // console.log("payroll", payroll);
 
   return (
     <section className="container max-w-5xl mx-auto flex min-h-screen flex-col p-10">
@@ -161,14 +162,81 @@ export default function Home() {
           <Division />
           <PieChart />
         </div>
+        <h2 className="mt-7 mb-2 font-bold text-xl text-white">
+          LAPD Shootings
+        </h2>
+        <h3 className="mb-2 text-bold" style={{ color: "C1C2C5" }}>
+          People
+        </h3>
+        <div className="mt-2 justify-center items-center grid grid-cols-1 md:grid-cols-3 md:gap-6">
+          <CounterCard number={42} title="Deaths" />
+          <CounterCard number={42} title="Serious Injuries" />
+          <CounterCard number={42} title="Total" />
+        </div>
+        <h3 className="mb-2 mt-7 text-bold" style={{ color: "C1C2C5" }}>
+          Animals
+        </h3>
+        <div className="mt-2 justify-center items-center grid grid-cols-1 md:grid-cols-3 md:gap-6">
+          <CounterCard number={42} title="Deaths" />
+          <CounterCard number={42} title="Serious Injuries" />
+          <CounterCard number={42} title="Total" />
+        </div>
         <h2 className="mt-7 font-bold text-xl text-white">Completed Audits</h2>
         <div className="mt-4">
           <Audits />
         </div>
-        <h2 className="mt-7 font-bold text-xl text-white">Ongoing Audits</h2>
-        <h2 className="mt-7 font-bold text-xl text-white">
+        {/* <h2 className="mt-7 font-bold text-xl text-white">Ongoing Audits</h2> */}
+        <h2 className="mt-12 font-bold text-xl text-white text-center">
           Transparency Facts
         </h2>
+        <div className="mt-4 flex justify-center">
+          <blockquote
+            className="twitter-tweet"
+            data-lang="en"
+            data-width="500" // Adjust the width as needed
+          >
+            <p lang="en" dir="ltr">
+              Yesterday, LA City Council voted 12-3 to approve the new LAPD
+              Contract for officers (Lieutenant & below):
+              <br />
+              <br />
+              • This will cost taxpayers an additional $994M over 4 years
+              <br />
+              <br />A question brought up was how much do LAPD officers
+              (Lieutenant & below) make compared to other City Employees?
+              <a href="https://t.co/aJfrcXQ0KQ">pic.twitter.com/aJfrcXQ0KQ</a>
+            </p>
+            &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+            <a href="https://twitter.com/lacontroller/status/1694786662839242891?ref_src=twsrc%5Etfw">
+              August 24, 2023
+            </a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js"></script>
+          </div>
+          <div className="mt-4 flex justify-center">
+          <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+            <p lang="en" dir="ltr">
+              💰 LAPD'S NEW CONTRACT (Lieutenants & below) will be voted on
+              tomorrow by City Council:
+              <br />
+              <br />
+              - $994M in additional costs over 4 years including 123M in
+              additional costs to an already increased police budget this fiscal
+              year
+              <br />
+              <br />- New recruits starting salary: $86,193 vs current $74,020
+            </p>
+            &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+            <a href="https://twitter.com/lacontroller/status/1694174047234650588?ref_src=twsrc%5Etfw">
+              August 23, 2023
+            </a>
+          </blockquote>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+          ></script>
+          </div>
+        
       </MantineProvider>
     </section>
   );
