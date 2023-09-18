@@ -14,6 +14,7 @@ import CounterCard from "@/components/CounterCard";
 import Division from "@/components/Division";
 import { Payroll } from "@/components/Payroll";
 import { MantineProvider } from "@mantine/core";
+import Twitter from "@/components/Twitter";
 
 interface PayrollItem {
   index?: number;
@@ -162,10 +163,14 @@ export default function Home() {
           <Division />
           <PieChart />
         </div>
+        <span className="mt-7 text-md text-center" style={{ color: "#41ffca" }}>
+          *This data includes information about all arrests that took place in
+          the City of Los Angeles in 2022.
+        </span>
         <h2 className="mt-7 mb-2 font-bold text-xl text-white">
           LAPD Shootings
         </h2>
-        <h3 className="mb-2 text-bold" style={{ color: "C1C2C5" }}>
+        <h3 className="mb-2 font-bold" style={{ color: "C1C2C5" }}>
           People
         </h3>
         <div className="mt-2 justify-center items-center grid grid-cols-1 md:grid-cols-3 md:gap-6">
@@ -173,7 +178,7 @@ export default function Home() {
           <CounterCard number={42} title="Serious Injuries" />
           <CounterCard number={42} title="Total" />
         </div>
-        <h3 className="mb-2 mt-7 text-bold" style={{ color: "C1C2C5" }}>
+        <h3 className="mb-2 mt-7 font-bold" style={{ color: "C1C2C5" }}>
           Animals
         </h3>
         <div className="mt-2 justify-center items-center grid grid-cols-1 md:grid-cols-3 md:gap-6">
@@ -189,54 +194,7 @@ export default function Home() {
         <h2 className="mt-12 font-bold text-xl text-white text-center">
           Transparency Facts
         </h2>
-        <div className="mt-4 flex justify-center">
-          <blockquote
-            className="twitter-tweet"
-            data-lang="en"
-            data-width="500" // Adjust the width as needed
-          >
-            <p lang="en" dir="ltr">
-              Yesterday, LA City Council voted 12-3 to approve the new LAPD
-              Contract for officers (Lieutenant & below):
-              <br />
-              <br />
-              • This will cost taxpayers an additional $994M over 4 years
-              <br />
-              <br />A question brought up was how much do LAPD officers
-              (Lieutenant & below) make compared to other City Employees?
-              <a href="https://t.co/aJfrcXQ0KQ">pic.twitter.com/aJfrcXQ0KQ</a>
-            </p>
-            &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
-            <a href="https://twitter.com/lacontroller/status/1694786662839242891?ref_src=twsrc%5Etfw">
-              August 24, 2023
-            </a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js"></script>
-          </div>
-          <div className="mt-4 flex justify-center">
-          <blockquote className="twitter-tweet" data-lang="en" data-width="500">
-            <p lang="en" dir="ltr">
-              💰 LAPD&apos;S NEW CONTRACT (Lieutenants & below) will be voted on
-              tomorrow by City Council:
-              <br />
-              <br />
-              - $994M in additional costs over 4 years including 123M in
-              additional costs to an already increased police budget this fiscal
-              year
-              <br />
-              <br />- New recruits starting salary: $86,193 vs current $74,020
-            </p>
-            &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
-            <a href="https://twitter.com/lacontroller/status/1694174047234650588?ref_src=twsrc%5Etfw">
-              August 23, 2023
-            </a>
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-          ></script>
-          </div>
-        
+        <Twitter />
       </MantineProvider>
     </section>
   );
