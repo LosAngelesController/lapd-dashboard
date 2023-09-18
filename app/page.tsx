@@ -216,7 +216,7 @@ export default function Home() {
           <div className="mt-4 flex justify-center">
           <blockquote className="twitter-tweet" data-lang="en" data-width="500">
             <p lang="en" dir="ltr">
-              💰 LAPD'S NEW CONTRACT (Lieutenants & below) will be voted on
+              💰 LAPD&apos;S NEW CONTRACT (Lieutenants & below) will be voted on
               tomorrow by City Council:
               <br />
               <br />

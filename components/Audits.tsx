@@ -1,9 +1,23 @@
 import * as React from "react";
 import LineItem from "./LineItem";
 
-import { audits } from "@/audits.json";
-
 export default function Audits() {
+  const audits = [
+    {
+      "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/07/Management-Audit-Report-of-the-Los-Angeles-Fire-and-Police-Pensions.png",
+      "name": "Management Audit Report of the Los Angeles Fire and Police Pensions",
+      "year": "2022",
+      "dept": "CITY OF LOS ANGELES",
+      "link": "https://controller.lacity.gov/audits/management-audit-report-of-the-los-angeles-fire-and-police-pensions"
+    },
+    {
+      "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2019/05/Limited-Scope-Fiscal-Audit-Report-Cover.png",
+      "name": "Limited Scope Fiscal Audit at the Los Angeles Police Department",
+      "year": "2018",
+      "dept": "LOS ANGELES POLICE DEPARTMENT",
+      "link": "https://controller.lacity.gov/audits/limited-scope-fiscal-audit-at-the-los-angeles-police-department"
+    }
+  ]
 
   return (
     <>
