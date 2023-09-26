@@ -134,7 +134,7 @@ export default function Home() {
         withNormalizeCSS
       >
         <Nav />
-        <h1 className="mt-5 font-bold text-2xl text-white">LAPD Dashboard</h1>
+        <h1 className="mt-5 font-bold text-2xl text-white">LA Police Department Dashboard</h1>
         <h2 className="mt-7 font-bold text-xl text-white">
           LAPD FY2023-2024 Budget:{" "}
           <span
