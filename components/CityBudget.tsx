@@ -13,7 +13,7 @@ function CityBudget(props: setCityBudget) {
     labels: props.cityBudget.map((x: any) => x.department),
     datasets: [
       {
-        label: "City of LA 2023 Budget",
+        label: "City of LA FY2023-2024 Budget",
         data: props.cityBudget.map((x: any) => x.totalBudget),
         backgroundColor: [
           "rgba(245, 233, 66, 0.8)",
@@ -57,7 +57,7 @@ function CityBudget(props: setCityBudget) {
 
   return (
     <div className="mt-6">
-      <h3 className="mb-2">City of LA Budget 2023</h3>
+      <h3 className="mb-2">City of LA Budget FY2023-2024</h3>
       <Pie data={data} height={400} options={options} onClick={onLABudgetClick}/>
     </div>
   );

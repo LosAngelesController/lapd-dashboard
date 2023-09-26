@@ -65,7 +65,7 @@ export default function Home() {
         const data = response.data.sheet1;
         setCityBudget(
           data
-            .filter((x: any) => x.fiscalYear === 2023)
+            .filter((x: any) => x.fiscalYear === 2024)
             .map((x: any) => ({
               department: x.department,
               totalBudget: x.totalBudget,
@@ -136,12 +136,12 @@ export default function Home() {
         <Nav />
         <h1 className="mt-5 font-bold text-2xl text-white">LAPD Dashboard</h1>
         <h2 className="mt-7 font-bold text-xl text-white">
-          LAPD FY2022-2023 Budget:{" "}
+          LAPD FY2023-2024 Budget:{" "}
           <span
             className="bg-zinc-800 rounded-lg px-2 py-1"
             style={{ color: "#41ffca" }}
           >
-            $3.15 BILLION
+            $3.22 BILLION
           </span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
