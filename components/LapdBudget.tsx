@@ -60,8 +60,8 @@ const policeBudget = [
   },
   {
     year: 2024,
-    operatingBudget: 1895285637,
-    totalBudget: 3240030260,
+    operatingBudget: 1855678740,
+    totalBudget: 3219066961,
   },
 ];
 
