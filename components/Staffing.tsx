@@ -16,27 +16,27 @@ function Staffing() {
     {
       year: 2018,
       officers: 9990,
-      civilianEmployees: 3002
+      civilianEmployees: 3002,
     },
     {
       year: 2019,
       officers: 10004,
-      civilianEmployees: 2992
+      civilianEmployees: 2992,
     },
     {
       year: 2020,
       officers: 9963,
-      civilianEmployees: 3070
+      civilianEmployees: 3070,
     },
     {
       year: 2021,
       officers: 9390,
-      civilianEmployees: 2749
+      civilianEmployees: 2749,
     },
     {
       year: 2022,
       officers: 9277,
-      civilianEmployees: 2689
+      civilianEmployees: 2689,
     },
     // {
     //   year: 2023,
@@ -51,24 +51,15 @@ function Staffing() {
       {
         label: "SWORN PERSONNEL",
         data: years.map((x: any) => x.officers),
-        backgroundColor: [
-          "#41ffca",
-
-        ],
-        borderColor: [
-          "#41ffca",
-        ],
+        backgroundColor: ["#41ffca"],
+        borderColor: ["#41ffca"],
         borderWidth: 1,
       },
       {
         label: "CIVILIAN PERSONNEL",
         data: years.map((x: any) => x.civilianEmployees),
-        backgroundColor: [
-          "#f5e942",
-        ],
-        borderColor: [
-          "#f5e942",
-        ],
+        backgroundColor: ["#f5e942"],
+        borderColor: ["#f5e942"],
         borderWidth: 1,
       },
     ],
@@ -81,7 +72,7 @@ function Staffing() {
           color: "rgb(255, 255, 255)",
           font: {
             weight: "bold",
-            size: 12
+            size: 12,
           },
         },
       },
@@ -93,8 +84,8 @@ function Staffing() {
           color: "rgba(198, 198, 198, .5)",
         },
         ticks: {
-          color: "rgb(255, 255, 255)"
-        }
+          color: "rgb(255, 255, 255)",
+        },
       },
       x: {
         grid: {
@@ -102,17 +93,26 @@ function Staffing() {
           color: "rgba(198, 198, 198, .5)",
         },
         ticks: {
-          color: "rgb(255, 255, 255)"
-        }
-      }
-    }
+          color: "rgb(255, 255, 255)",
+        },
+      },
+    },
   };
 
   return (
-    <div className="mt-4">
-      <h5 className="mb-2">SWORN LAPD OFFICERS 2018 - 2022</h5>
-      <Bar data={data} height={325} options={options} />
-    </div>
+    <>
+      <div className="mt-4">
+        <h5 className="mb-2">SWORN LAPD OFFICERS 2018 - 2022</h5>
+        <Bar data={data} height={325} options={options} />
+        <a
+          href="https://controller.lacity.gov/acfr22.pdf"
+          className="underline text-xs flex justify-center mt-4"
+          style={{ color: "#41ffca" }}
+        >
+          Source: Annual Comprehensive Financial Report (ACFR)
+        </a>
+      </div>
+    </>
   );
 }
 
