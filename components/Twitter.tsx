@@ -248,6 +248,249 @@ export default function Twitter() {
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            NEW Map & Analysis: 41.18 Arrests
+            <a href="https://t.co/nT5HuVOPVJ">https://t.co/nT5HuVOPVJ</a>
+            <br />
+            <br />
+            We created a map that shows details of arrests from 2012 to 2023
+            under LA Municipal Code 41.18, which criminalizes sitting, lying, &
+            sleeping, or placing personal property in the public right-of-way in
+            certain instances.
+            <a href="https://t.co/kVLUy2TOmi">pic.twitter.com/kVLUy2TOmi</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1671963656945557504?ref_src=twsrc%5Etfw">
+            June 22, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            Our proposal to create a dashboard of use-of-force incidents in the
+            City of LA that:
+            <br />
+            <br />
+            ✅ is shaped by community need
+            <br />✅ is up-to-date / accessible to all
+            <br />✅ provides transparency on LAPD&apos;s data on uses-of-force
+            <br />
+            <br />
+            ...was approved by the Innovation & Performance Commission.
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1658973525770932224?ref_src=twsrc%5Etfw">
+            May 17, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            📣Transparency alert: LAPD Use Of Force Data Dashboard📣
+            <br />
+            <br />
+            We’re currently requesting a grant from the City’s Innovation &
+            Performance Commission to fund a NEW PROJECT from our office: 📊An
+            interactive public dashboard of timely & detailed data on LAPD use
+            of force incidents
+            <a href="https://t.co/PyqViXMmIT">pic.twitter.com/PyqViXMmIT</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1658264083580465153?ref_src=twsrc%5Etfw">
+            May 16, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            🚨1 of every 4 LAPD car chases resulted in injury or death - often
+            to innocent bystanders 🚨
+            <br />
+            <br />
+            According to a new LAPD report, LAPD were involved in 4,203 car
+            chases from January 2018 - March 2023.
+            <br />
+            <br />
+            - 1,592 (38%) resulted in crashes.
+            <br />- 1,032 (25%) involved injury or death.
+            <a href="https://t.co/QJzB8T7J1S">pic.twitter.com/QJzB8T7J1S</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1655718255015886850?ref_src=twsrc%5Etfw">
+            May 8, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            We were asked how many City departments & bureaus the LAPD&apos;s
+            $3.24B proposed budget could fund:
+            <br />
+            <br />
+            LAPD&apos;s proposed $3.24B budget makes up more than 34 City
+            departments & bureaus combined.
+            <br />
+            <br />
+            Some include: Youth Development $3M, Community Investment for
+            Families $35M, & Housing $334M.
+            <a href="https://t.co/5PG4t19fwc">pic.twitter.com/5PG4t19fwc</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1654639013062639618?ref_src=twsrc%5Etfw">
+            May 6, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            📖 City of LA Proposed LAPD Budget For FY23-24:
+            <br />
+            <br />
+            $3.24 billion ($87M increase from FY22-23) or 24.8% of the total
+            City budget.
+            <br />
+            <br />
+            LAPD will receive 44% ($2.9B) of the City’s Unrestricted Revenues
+            (discretionary funds that can be spent on anything).
+            <a href="https://t.co/yhUueAeZMb">pic.twitter.com/yhUueAeZMb</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1651427787197280256?ref_src=twsrc%5Etfw">
+            April 27, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            We were asked how much taxpayers pay for LAPD presence at City
+            Council meetings. Here are cost details per LAPD covering 24
+            meetings (Oct 2022 - Jan 2023).
+            <br />
+            <br />
+            Total LAPD cost for 24 meetings: $404,238🚨
+            <br />
+            <br />
+            Per meeting:
+            <br />- # of officers: 30-95
+            <br />- Avg shift hours: 5.1
+            <br />- Avg cost: $16,843{" "}
+            <a href="https://t.co/0BdzPUFgD1">pic.twitter.com/0BdzPUFgD1</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1650664983108390912?ref_src=twsrc%5Etfw">
+            April 25, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            Watch ▶️: We spoke to{" "}
+            <a href="https://twitter.com/abc7carlos?ref_src=twsrc%5Etfw">
+              @abc7carlos
+            </a>{" "}
+            about our office’s LAPD Helicopter audit.
+            <br />
+            <br />
+            Our audit on LAPD Helicopters is assessing:
+            <br />- Use &amp; cost of fuel
+            <br />- Impact on crime
+            <br />- Overall costs
+            <br />- Financial impacts
+            <br />- Quality of life impacts
+            <br />
+            <br />
+            Full story @abc7la:{" "}
+            <a href="https://t.co/csnLAcaMQ0">https://t.co/csnLAcaMQ0</a>{" "}
+            <a href="https://t.co/xZPBcpRNJn">pic.twitter.com/xZPBcpRNJn</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1649512874551939073?ref_src=twsrc%5Etfw">
+            April 21, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            Our Chief of Accountability &amp; Oversight, Sergio Perez, spoke
+            with HEATED for their story on the climate impact of LAPD
+            helicopters.{" "}
+            <a href="https://t.co/i3pLqAIQpS">https://t.co/i3pLqAIQpS</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1647030806886629376?ref_src=twsrc%5Etfw">
+            April 15, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            People want to know the cost of police presence at Council
+            meetings/demonstrations:
+            <br />
+            <br />
+            &quot;Meanwhile, Mejia is moving ahead with an official demand for
+            figures detailing the scale and cost of the police response.
+            &apos;We have to let people know, ‘Hey, this is what your tax
+            dollars got&apos;&apos;&quot;
+            <a href="https://t.co/8VRTQcOGyy">https://t.co/8VRTQcOGyy</a>
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1645834662315708421?ref_src=twsrc%5Etfw">
+            April 11, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            Transparency is important & necessary in government. It&apos;s
+            unfortunate that LAPD’s disclosure of information in response to a
+            lawful CPRA request has led to litigation. This fiscal year,
+            taxpayers spent at least $24M on police liabilities which don&apos;t
+            come out of the police budget.
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1644427538431873025?ref_src=twsrc%5Etfw">
+            April 7, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <blockquote className="twitter-tweet" data-lang="en" data-width="500">
+          <p lang="en" dir="ltr">
+            Today, City Council will vote on extending LAPD & LA Metro’s
+            contract for $54 million from July-Dec of 2022. (Yes, this is a
+            contract for services performed in the past. 🤷)
+          </p>
+          &mdash; LA City Controller Kenneth Mejia (@lacontroller){" "}
+          <a href="https://twitter.com/lacontroller/status/1630979621230641152?ref_src=twsrc%5Etfw">
+            March 1, 2023
+          </a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+      </div>
     </>
   );
 }
