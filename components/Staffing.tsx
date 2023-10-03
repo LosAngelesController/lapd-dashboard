@@ -108,6 +108,7 @@ function Staffing() {
           href="https://controller.lacity.gov/acfr22.pdf"
           className="underline text-xs flex justify-center mt-4"
           style={{ color: "#41ffca" }}
+          target="_blank"
         >
           Source: Annual Comprehensive Financial Report (ACFR)
         </a>
