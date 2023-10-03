@@ -3,7 +3,7 @@ import * as React from "react";
 export default function Twitter() {
   return (
     <>
-      <div className="mt-4 flex justify-center">
+      {/* <div className="mt-4 flex justify-center">
         <blockquote
           className="twitter-tweet"
           data-lang="en"
@@ -66,7 +66,7 @@ export default function Twitter() {
           </a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
-      </div>
+      </div> */}
       <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
@@ -89,7 +89,7 @@ export default function Twitter() {
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </div>
-      <div className="mt-4 flex justify-center">
+      {/* <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
             Before City Council votes on the new LAPD contract, the public
@@ -128,7 +128,7 @@ export default function Twitter() {
           </a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
-      </div>
+      </div> */}
       <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
@@ -150,7 +150,7 @@ export default function Twitter() {
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </div>
-      <div className="mt-4 flex justify-center">
+      {/* <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
             43% of all 41.18 arrests from Jan 2012 to May 2023 are of Black
@@ -192,7 +192,7 @@ export default function Twitter() {
           </a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
-      </div>
+      </div> */}
       <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
@@ -212,7 +212,7 @@ export default function Twitter() {
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </div>
-      <div className="mt-4 flex justify-center">
+      {/* <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
             Tomorrow (Tues 9/27), the LA Police Commission will vote on a
@@ -247,7 +247,7 @@ export default function Twitter() {
           </a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
-      </div>
+      </div> */}
       <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
@@ -268,7 +268,7 @@ export default function Twitter() {
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </div>
-      <div className="mt-4 flex justify-center">
+      {/* <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
             Our proposal to create a dashboard of use-of-force incidents in the
@@ -307,7 +307,7 @@ export default function Twitter() {
           </a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
-      </div>
+      </div> */}
       <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
@@ -426,7 +426,7 @@ export default function Twitter() {
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </div>
-      <div className="mt-4 flex justify-center">
+      {/* <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
             Our Chief of Accountability &amp; Oversight, Sergio Perez, spoke
@@ -460,7 +460,7 @@ export default function Twitter() {
           </a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
-      </div>
+      </div> */}
       <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
@@ -477,7 +477,7 @@ export default function Twitter() {
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </div>
-      <div className="mt-4 flex justify-center">
+      {/* <div className="mt-4 flex justify-center">
         <blockquote className="twitter-tweet" data-lang="en" data-width="500">
           <p lang="en" dir="ltr">
             Today, City Council will vote on extending LAPD & LA Metro’s
@@ -490,7 +490,7 @@ export default function Twitter() {
           </a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js"></script>
-      </div>
+      </div> */}
     </>
   );
 }
