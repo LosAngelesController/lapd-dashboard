@@ -102,7 +102,7 @@ function Staffing() {
   return (
     <>
       <div className="mt-4">
-        <h5 className="mb-2">SWORN LAPD PERSONNEL 2018 - 2022</h5>
+        <h5 className="mb-2">LAPD PERSONNEL 2018 - 2022</h5>
         <Bar data={data} height={325} options={options} />
         <a
           href="https://controller.lacity.gov/acfr22.pdf"
